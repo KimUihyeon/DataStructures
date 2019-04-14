@@ -84,6 +84,7 @@ List는 head, tail을 가지고 있고 각 Node는 nextNode와 prevNode를 기�
 <br>
 <br>
 
+<hr>
 
 
 ### Queue
@@ -105,6 +106,8 @@ List는 head, tail을 가지고 있고 각 Node는 nextNode와 prevNode를 기�
 <br>
 <br>
 
+<hr>
+
 ### Stack
 
 [openJDK Link](#https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) | [sourceCode](#) | [자세히 보기](#) 
@@ -122,6 +125,8 @@ List는 head, tail을 가지고 있고 각 Node는 nextNode와 prevNode를 기�
 <br>
 <br>
 
+
+<hr>
 
 
 ### Deque
