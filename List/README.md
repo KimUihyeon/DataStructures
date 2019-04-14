@@ -2,9 +2,9 @@
 
 ## 목차
  1. 일반 리스트 (Java->ArrayList | C# ->List) [link](#ArrayList) 
- 1. 연결리스트 (Linked List)  [link](#) 
- 1. 큐 ()  [link](#) 
- 1. 스텍 (stack)  [link](#) 
+ 1. 이중 연결리스트 (double Linked List)  [link](#doubleLinkedList) 
+ 1. 큐 (Queue)  [link](#Queue) 
+ 1. 스텍 (stack)  [link](#Stack) 
  1. 데큐 [link](#) 
 
 <br>
@@ -14,7 +14,7 @@
 
 ### ArrayList
 
-[openJDK Link](#) | [sourceCode](#) | [자세히 보기](#) 
+[openJDK Link](#https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html) | [sourceCode](#) | [자세히 보기](#) 
     
 ArrayList 내부적으로 size 10의 배열을 Defualt로 생성해서사용하고 추가될 데이터의 인덱스가 현재 배열의 사이즈보다 큰 경우배열을 Growth factor(a) 만큼 곱한값으로 새 배열의 크기를지정하고 기존값을 복사해 채워넣는다.  Growth factor(성장인자)a는 다음표와 같다.
 
@@ -61,8 +61,72 @@ ArrayList의 최대 사이즈는 Integer.MAX_VALUE (0x7fffffff)를넘을수 없�
 
 <hr>
 
-### LinkedList
-> 참고 블로그 [link](https://github.com/KimUihyeon/Utility/tree/master/MailService) 
+### Double Linked List
+
+[sourceCode](#) | [자세히 보기](#) 
+
+List는 head, tail을 가지고 있고 각 Node는 nextNode와 prevNode를 기억하고 있다. 서로 연결구조로 되어있기 때문에 메모리 사용량이 ArrayList보다 적고 서로 add시 불필요한 작업을 하지 않는다. 일반 LinkedList보다 좋은점은 탐색,삽입시 반절만 검색해서 Indexing 하기때문에 O(n/2) 로 두배가량 빠르다.
+
+
+`스터디 구현 Interface `
+
+* add(E data); // 맨뒤 삽입
+* add(index ,E data) // 해당 인덱스에 삽입
+* remove(index) // 해당 데이터 삭제
+* remove(E data) // 해당 인덱스 삭제
+* clear() // 해당 인덱스 삭제
+* indexOf(index) // 해당 인덱스 반환
+* contain() // 값이 있는지 boolean 리턴
+* toArray() // Array 로 변환
+
+
+
+<br>
+<br>
+
+
+
+### Queue
+
+[openJDK Link](#https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) | [sourceCode](#) | [자세히 보기](#) 
+
+선입선출  first-in-first-out (FIFO) 방식으로 데이터를 운용하고 일반 Que의 경우 배열의 길이를 고정으로 놓음, 동적 배열은 ArrayQue임
+
+`스터디 구현 Interface `
+
+* empty() // 빈값인지 체크
+* peek()  // 재일 뒤의 값을 확인함
+* pop()   // 재일 뒤의 값을 뽑아냄 (삭제하고 리턴)
+* push(E data)  // 재일 뒤로 값을 넣음
+* search(E data) // 값이 있는지 검색하고 인덱스를 리턴함 없으면 -1
+
+
+
+<br>
+<br>
+
+### Stack
+
+[openJDK Link](#https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) | [sourceCode](#) | [자세히 보기](#) 
+
+후입선출  last-in-first-out (LIFO) 방식으로 데이터를 운용하고 일반 Stack의 경우 배열의 길이를 고정으로 놓음, 동적 배열은 ArrayStack임
+
+`스터디 구현 Interface `
+
+* empty() // 빈값인지 체크
+* peek()  // 재일 앞의 값을 확인함
+* pop()   // 재일 앞의 값을 뽑아냄 (삭제하고 리턴)
+* push(E data)  // 재일 뒤로 값을 넣음
+* search(E data) // 값이 있는지 검색하고 인덱스를 리턴함 없으면 -1
+
+<br>
+<br>
+
+
+
+### Deque
+
+[openJDK Link](#) | [sourceCode](#) | [자세히 보기](#) 
 
 
 <br>
