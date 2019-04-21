@@ -1,8 +1,8 @@
 # :dizzy: 비선형구조
 
 ## 목차
- 1. Tree (Java->ArrayList | C# ->List) [link](#Tree) 
- 1. Graph (double Linked List)  [link](#Graph) 
+ 1. Tree [link](#Tree) 
+ 1. Graph [link](#Graph) 
 
 
 <br>
@@ -14,7 +14,7 @@
 
 * 트리의 정의
 
-자신과 같은 클래스 타입을 변수로 가지고 있고 아래와 같은 트리형태로 되어있는 자료구조. 노드[link]()(POJO)클래스와 노드를 운용하는 Tree(Management Class)[link]()로 구분해서 구현한다. `힙정렬 혹은 학습을 위해 Binary Tree`가 일반적이지만 `실제협업에서는 노드클래스가 NodeCollection`을 가지고 있게 하는 구조로 많이 개발한다.
+자신과 같은 클래스 타입을 변수로 가지고 있고 아래와 같은 트리형태로 되어있는 자료구조. 노드[link](https://github.com/KimUihyeon/DataStructures/blob/master/Tree/MyTree/MyTreeNode.java)(POJO)클래스와 노드를 운용하는 Tree(Management Class)[link]()로 구분해서 구현한다. `힙정렬 혹은 학습을 위해 Binary Tree`가 일반적이지만 `실제협업에서는 노드클래스가 NodeCollection`을 가지고 있게 하는 구조로 많이 개발한다.
 
 대표적인 트리의 종류로는 신장트리, 이진트리, 레드블랙트리.. 등이 있다.
 
@@ -24,7 +24,7 @@
 * 트리의 순회
 
 
-1. DFS - 중위 탐색 (in-order) [sourceCode]()
+1. DFS - 중위 탐색 (in-order) [sourceCode](https://github.com/KimUihyeon/DataStructures/blob/master/Tree/MyTree/MyTree.java#L24)
 ```
             1
          /     \
@@ -34,7 +34,7 @@
 ```
 `순회결과 || 4-> 2-> 5-> 1-> 6-> 3-> 7`
 
-2. DFS - 전위 탐색 (in-order) [sourceCode]()
+2. DFS - 전위 탐색 (in-order) [sourceCode](https://github.com/KimUihyeon/DataStructures/blob/master/Tree/MyTree/MyTree.java#L64)
 
 ```
             1
@@ -47,7 +47,7 @@
 
 
 
-3. DFS - 후위 탐색 (post-order) [sourceCode]()
+3. DFS - 후위 탐색 (post-order) [sourceCode](https://github.com/KimUihyeon/DataStructures/blob/master/Tree/MyTree/MyTree.java#L78)
 
 ```
             1
@@ -60,7 +60,7 @@
 
 
 
-4. BFS - 계층 우선 탐색 (in-order) [sourceCode]()
+4. BFS - 계층 우선 탐색 (in-order) [sourceCode](https://github.com/KimUihyeon/DataStructures/blob/master/Tree/MyTree/MyTree.java#L112)
 
 ```
             1
