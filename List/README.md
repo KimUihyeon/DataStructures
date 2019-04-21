@@ -5,7 +5,6 @@
  1. 이중 연결리스트 (double Linked List)  [link](#doubleLinkedList) 
  1. 큐 (Queue)  [link](#Queue) 
  1. 스텍 (stack)  [link](#Stack) 
- 1. 데큐 [link](#) 
 
 <br>
 <br>
@@ -127,12 +126,3 @@ List는 head, tail을 가지고 있고 각 Node는 nextNode와 prevNode를 기�
 
 
 <hr>
-
-
-### Deque
-
-[openJDK Link](#) | [sourceCode](#) | [자세히 보기](#) 
-
-
-<br>
-<br>
